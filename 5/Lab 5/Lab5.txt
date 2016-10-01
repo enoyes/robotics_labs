@@ -1,0 +1,42 @@
+Type: BR/EDR  Bus: USB
+        BD Address: 00:02:72:CA:F4:60  ACL MTU: 1021:8  SCO MTU: 64:1
+        UP RUNNING PSCAN
+        RX bytes:856 acl:0 sco:0 events:36 errors:0
+        TX bytes:646 acl:0 sco:0 commands:36 errors:0
+        Features: 0xff 0xff 0x8f 0xfe 0x9b 0xff 0x79 0x87
+        Packet type: DM1 DM3 DM5 DH1 DH3 DH5 HV1 HV2 HV3
+        Link policy: RSWITCH HOLD SNIFF PARK
+        Link mode: SLAVE ACCEPT
+        Name: 'localhost.localdomain-0'
+        Class: 0x6e0100
+        Service Classes: Networking, Rendering, Capturing, Audio, Telephony
+        Device Class: Computer, Uncategorized
+        HCI Version: 3.0 (0x5)  Revision: 0x0
+        LMP Version: 3.0 (0x5)  Subversion: 0x4203
+        Manufacturer: Broadcom Corporation (15)
+
+Bluetooth MAC: 00:02:72:CA:F4:60
+
+Wiimote MAC: 8C:56:C5:40:36:A7       Nintendo RVL-CNT-01
+
+Wiimote Values:
+	A = 48
+	B = 49
+	1 = 1
+	2 = 2
+	Dup = 103
+	Dright = 106
+	Ddown = 108
+	Dleft = 105
+	Plus = 151
+	Minus = 156
+	Home = 60
+
+Value represents state of button
+
+Wiimote.cc: In constructor 'Wiimote::Wiimote()':
+Wiimote.cc:9:31: error: too few arguments to function 'int open(const char*, int, ...)'
+/usr/include/fcntl.h:119:12: note: declared here
+Wiimote.cc: In member function 'void Wiimote::Listen()':
+Wiimote.cc:35:22: error: 'value' was not declared in this scope
+make: *** [Wiimote.o] Error 1
